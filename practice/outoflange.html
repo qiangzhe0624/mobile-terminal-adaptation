@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div[class='box1'] input[type="number"]:out-of-range{
+      border-color: red;
+    }
+    div[class='box1'] input:read-only{
+      background-color: yellow;
+    }
+    div[class='box1'] p:only-of-type{
+      background-color: tomato;
+    }
+    div[class='box1'] p:only-child{
+      color: turquoise;
+    }
+    div[class='box1'] p:empty{
+      width:100px;
+      height:20px;
+      background:#ff0000;
+    }
+    div[class='box2'] input:checked{
+      height: 50px;
+      width: 50px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <input type="number" max="10" min="2" value="1">
+    <input type="text" value="helloqiangzhe" readonly>
+    <div><p>This is a paragraph.</p><span></span></div>
+    <div><p>This is a paragraph.</p></div>
+    <p></p>
+    <div><p>This is a paragraph.</p><p>This is a paragraph.</p></div>
+  </div>
+  <div class="box2">
+    <form action="">
+      <input type="radio" value="male" checked name="sex" id="male">
+      <label for="male">男</label>
+      <input type="radio" value="female" name="sex" id="female">
+      <label for="female">女</label>
+      <br>
+      <input type="checkbox" value="qiche" name="car" id="qiche" checked>
+      <label for="qiche">汽车</label>
+      <input type="checkbox" value="hongguang" name="car" id="hongguang">
+      <label for="hongguang">五菱</label>
+      <input type="checkbox" value="mingjue" name="car" id="mingjue">
+      <label for="mingjue">名爵</label>
+      <input type="checkbox" value="shangqi" name="car" id="shangqi">
+      <label for="shangqi">上期</label>
+    </form>
+  </div>
+</body>
+</html>

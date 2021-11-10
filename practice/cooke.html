@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <form action="">
+      <span>用户名：</span><input type="text"><br/>
+      <span>密码</span><input type="password"><br/>
+      <input type="checkbox" name="jiuzhu" id="jiuzhu"><label for="jiuzhu">记住我</label><br/>
+      <input type="submit" value="登录模拟"></input>
+    </form>
+  </div>
+  <script>
+    document.cookie ='asdf=asdfff'
+    const username = document.querySelector('input[type="text"]')
+    const password = document.querySelector('input[type="password"]')
+    const checkbox = document.querySelector('input[type="checkbox"]')
+    const submit = document.querySelector('input[type="submit"]')
+    const cookieArr = document.cookie.split(';').map(item =>{
+      return item.split('=')
+    })
+    console.log(cookieArr,'cookieArr');
+    if(cookieArr.length>1){
+      username.value = cookieArr[0][0]
+      checkbox.checked =true
+    }
+    submit.addEventListener('click',(e)=>{
+      console.log(username.value,password.value,checkbox.checked);
+      if(username.value && password.value && checkbox.checked){
+        setCookie(username.value,password.value,100)
+      }
+      e.preventDefault()
+    })
+    function setCookie(cname,cvalue,exdays)
+      {
+        var d = new Date();
+        d.setTime(d.getTime()+(exdays*1000));
+        var expires = "expires="+d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+      }
+  </script>
+</body>
+</html>
