@@ -1,4 +1,4 @@
-# css-gong-cheng
+# mobile-terminal-adaptation
 
 ## Project setup
 ```
