@@ -2,10 +2,16 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import Vant from 'vant';
+// import {Button} from 'vant';  
+import Vant from 'vant'
+Vue.use(Vant)
 import 'vant/lib/index.css';
-
-Vue.use(Vant);
+// import QiangUi from '../qiang_modules/qiangui/index'
+// Vue.use(QiangUi)
+import {QiangA,QiangB} from '../qiang_modules/qiangui/index'
+Vue.component('QiangA',QiangA)
+Vue.component('QiangB',QiangB)
+// Vue.use(Button);
 Vue.config.productionTip = false
 
 new Vue({

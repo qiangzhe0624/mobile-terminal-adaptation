@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <linearGradient x1="41.3296592%" y1="56.7544857%" x2="59.3687011%" y2="37.4087792%" id="linearGradient-1">
+            <stop stop-color="#E9E9E9" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,0 L16,2.42327698 C14.4235367,2.56693606 13.635305,4.04604186 13.635305,6.86059438 C13.635305,9.67514691 14.4235367,12.7216154 16,16 C12.4121727,14.1409991 9.32597125,11.7782313 6.74139572,8.91169668 C4.15682019,6.04516203 1.90968828,3.07459647 0,0 Z" id="path-2"></path>
+        <filter x="-34.4%" y="-34.4%" width="181.2%" height="181.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.782883796   0 0 0 0 0.739778522   0 0 0 0 0.705225226  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页新方案" transform="translate(-373.000000, -244.000000)">
+            <g id="概览" transform="translate(77.000000, 139.000000)">
+                <g id="指标卡1" transform="translate(299.000000, 0.000000)">
+                    <g id="icon" transform="translate(0.000000, 108.000000)">
+                        <path d="M0,0 L12.32816,4.78626173 L13.4833332,12.664598 L16,16 L4,16 C1.790861,16 2.705415e-16,14.209139 0,12 L0,0 L0,0 Z" id="矩形" fill="#F5F5F5"></path>
+                        <g id="矩形">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
